@@ -1,0 +1,156 @@
+{
+  "userId": 1,
+  "userDel": false,
+  "userAccount": "Admin",
+  "scoreArray": [
+    98.5,
+    89,
+    120
+  ],
+  "money": 123.45678987654321,
+  "user1": {
+    "userId": 1,
+    "userAccount": "Bob1",
+    "userPassword": "abc123456",
+    "userRemark": "",
+    "userDel": 0,
+    "userCreatetime": "2019-03-07 16:52:46",
+    "userUpdatetime": "2019-03-07 16:52:46"
+  },
+  "user2": {
+    "userId": 2,
+    "userAccount": "Bob2",
+    "userPassword": "abc123456",
+    "userRemark": "",
+    "userDel": 0,
+    "userCreatetime": "2019-03-07 16:52:46",
+    "userUpdatetime": "2019-03-07 16:52:46",
+    "more": "!@#$%^&*"
+  },
+  "user3": {
+    "userId": 3,
+    "userAccount": "Bob3",
+    "userPassword": "abc123456",
+    "userRemark": "用户",
+    "userCreatetime": "2019-03-07 16:52:46",
+    "userUpdatetime": "2019-03-07 16:52:46"
+  },
+  "userList": [
+    {
+      "userId": 2,
+      "userAccount": "Alice",
+      "userPassword": "abc789",
+      "userRemark": "大学生",
+      "userDel": 1,
+      "userCreatetime": "2019-03-08 16:52:46",
+      "userUpdatetime": "2019-03-08 16:52:46"
+    },
+    {
+      "userId": 3,
+      "userAccount": "Tom",
+      "userPassword": "[{}]147@#",
+      "userRemark": "学生",
+      "userDel": 0,
+      "userCreatetime": "2007-03-08 16:52:46",
+      "userUpdatetime": "2007-03-08 16:52:46"
+    }
+  ],
+  "mapWrapper1": {
+    "k1": 123,
+    "k2": "abc",
+    "k3": true,
+    "k4": [
+      1,
+      2,
+      3
+    ],
+    "k5": {
+      "k5-1": "qwer",
+      "k5-2": 90.6
+    },
+    "k6": {"k6-1": [
+      "qaz",
+      "wsx"
+    ]},
+    "k7": [
+      {"k7-1": 456},
+      {"k7-2": "asdf"}
+    ],
+    "k8": {
+      "userId": 3,
+      "userAccount": "Bob3",
+      "userPassword": "abc123456",
+      "userRemark": "用户",
+      "userCreatetime": "2019-03-07 16:52:46",
+      "userUpdatetime": "2019-03-07 16:52:46"
+    },
+    "k9": [
+      {
+        "userId": 2,
+        "userAccount": "Alice",
+        "userPassword": "abc789",
+        "userRemark": "大学生",
+        "userDel": 1,
+        "userCreatetime": "2019-03-08 16:52:46",
+        "userUpdatetime": "2019-03-08 16:52:46"
+      },
+      {
+        "userId": 3,
+        "userAccount": "Tom",
+        "userPassword": "[{}]147@#",
+        "userRemark": "学生",
+        "userDel": 0,
+        "userCreatetime": "2007-03-08 16:52:46",
+        "userUpdatetime": "2007-03-08 16:52:46"
+      }
+    ]
+  },
+  "mapWrapper2": [
+    1,
+    "2",
+    {
+      "k1": 123,
+      "k2": "abc",
+      "k3": true,
+      "k4": [
+        1,
+        2,
+        3
+      ],
+      "k5": {
+        "k5-1": "qwer",
+        "k5-2": 90.6
+      },
+      "k6": {"k6-1": [
+        "qaz",
+        "wsx"
+      ]},
+      "k7": [
+        {"k7-1": 456},
+        {"k7-2": "asdf"}
+      ]
+    },
+    {
+      "k8": 456,
+      "k9": "def",
+      "k10": false,
+      "k11": [
+        4,
+        5,
+        6
+      ],
+      "k12": {
+        "k12-1": "qwer",
+        "k12-2": 90.6
+      },
+      "k13": {"k13-1": [
+        "qaz",
+        "wsx"
+      ]},
+      "k14": [
+        {"k14-1": 456},
+        {"k14-2": "asdf"}
+      ]
+    }
+  ]
+}

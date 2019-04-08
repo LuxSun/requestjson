@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: commons-logging-1.2.jar spring-expression-4.3.2.RELEASE.ja
+ r spring-core-4.3.2.RELEASE.jar javax.servlet-api-3.1.0.jar json-smar
+ t-2.3.jar slf4j-api-1.7.25.jar fastjson-1.2.47.jar accessors-smart-1.
+ 2.jar spring-aop-4.3.2.RELEASE.jar asm-5.0.4.jar spring-beans-4.3.2.R
+ ELEASE.jar json-path-2.4.0.jar spring-web-4.3.2.RELEASE.jar spring-co
+ ntext-4.3.2.RELEASE.jar spring-webmvc-4.3.2.RELEASE.jar
+Main-Class: com.luxsun.requestjson
+
