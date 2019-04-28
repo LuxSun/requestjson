@@ -1,9 +1,9 @@
 package com.luxsuen.requestjson.web;
 
-import com.luxsuen.requestjson.annotation.RequestJson;
+import com.luxsuen.jsonutil.util.JsonUtil;
 import com.luxsuen.requestjson.entity.User;
+import com.luxsuen.requestjson.annotation.RequestJson;
 import com.luxsuen.requestjson.util.MapWrapper;
-import com.luxsuen.requestjson.util.JsonUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -18,7 +18,7 @@ public class UserController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    /**
+    /*
      * @Author Lux Sun
      * @Description: 测试（以大括号开始） @PathVariable & @RequestJson + 一步获取分参后的value
      * @Param: [userId, userDel, userAccount, scoreArray, money, user1, user2, user3, userList, mapWrapper1, mapWrapper2]
@@ -37,8 +37,7 @@ public class UserController {
                                                 @RequestJson(value = "user3") User user3,
                                                 @RequestJson(value = "userList") List<User> userList,
                                                 @RequestJson(value = "mapWrapper1") MapWrapper mapWrapper1,
-                                                @RequestJson(value = "mapWrapper2") MapWrapper mapWrapper2)
-    {
+                                                @RequestJson(value = "mapWrapper2") MapWrapper mapWrapper2) {
         // 获取实体类 & 实体类数组
         Object user = JsonUtil.getJsonEntityByKeyArray(mapWrapper1.getMapWrapper(), User.class, "k8");
         Object userlist = JsonUtil.getJsonEntityListByKeyArray(mapWrapper1.getMapWrapper(), User.class, "k9");
@@ -54,7 +53,7 @@ public class UserController {
         return null;
     }
 
-    /**
+    /*
      * @Author Lux Sun
      * @Description: 测试（以中括号开始）
      * @Param: [mapWrapper3]
@@ -62,8 +61,43 @@ public class UserController {
      */
     @RequestMapping(value = "info", method = RequestMethod.POST)
     @ResponseBody
-    public Object checkRequestJsonByBeginMidBrace(@RequestJson(value = "mapWrapper3") MapWrapper mapWrapper3)
-    {
+    public Object checkRequestJsonByBeginMidBrace(@RequestJson(value = "mapWrapper3") MapWrapper mapWrapper3) {
+        return null;
+    }
+
+    /*
+     * @Author Lux Sun
+     * @Description: 测试（只有大括号）
+     * @Param: [arr]
+     * @Return: java.lang.Object
+     */
+    @RequestMapping(value = "onlyBigBrace", method = RequestMethod.POST)
+    @ResponseBody
+    public Object checkRequestJsonByOnlyBigBrace(@RequestJson(value = "name") String name) {
+        return null;
+    }
+
+    /*
+     * @Author Lux Sun
+     * @Description: 测试（只有中括号）
+     * @Param: [arr]
+     * @Return: java.lang.Object
+     */
+    @RequestMapping(value = "onlyMidBrace", method = RequestMethod.POST)
+    @ResponseBody
+    public Object checkRequestJsonByOnlyMidBrace(@RequestJson(value = "arr") Integer[] arr) {
+        return null;
+    }
+
+    /*
+     * @Author Lux Sun
+     * @Description: Required 测试（只有大括号）
+     * @Param: [arr]
+     * @Return: java.lang.Object
+     */
+    @RequestMapping(value = "requiredOnlyBigBrace", method = RequestMethod.POST)
+    @ResponseBody
+    public Object checkRequestJsonByRequiredOnlyBigBrace(@RequestJson(value = "name", required = false) String name) {
         return null;
     }
 }

@@ -20,7 +20,7 @@ import java.util.Map;
 
 public class RequestJsonHandlerMethodArgumentResolver implements HandlerMethodArgumentResolver {
 
-    /**
+    /*
      * @Author Lux Sun
      * @Param: [methodParameter]
      * @Return: boolean
@@ -30,7 +30,7 @@ public class RequestJsonHandlerMethodArgumentResolver implements HandlerMethodAr
         return methodParameter.hasParameterAnnotation(Const.ANNOTATION_CLASS);
     }
 
-    /**
+    /*
      * @Author Lux Sun
      * @Param: [methodParameter, modelAndViewContainer, nativeWebRequest, webDataBinderFactory]
      * @Return: java.lang.Object
@@ -67,6 +67,10 @@ public class RequestJsonHandlerMethodArgumentResolver implements HandlerMethodAr
             }
         }
         catch (Exception e) {
+            if (!methodParameter.getParameterAnnotation(Const.ANNOTATION_CLASS).required()) {
+                return null;
+            }
+
             e.printStackTrace();
             return null;
         }
@@ -95,7 +99,7 @@ public class RequestJsonHandlerMethodArgumentResolver implements HandlerMethodAr
         }
     }
 
-    /**
+    /*
      * @Author Lux Sun
      * @Param: [nativeWebRequest]
      * @Return: java.lang.String

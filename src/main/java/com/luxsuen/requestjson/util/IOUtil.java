@@ -4,7 +4,7 @@ import java.io.*;
 
 public class IOUtil {
 
-    /**
+    /*
      * @Author Lux Sun
      * @Description: InputStream 转 String
      * @Param: [in, encode]
