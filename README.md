@@ -5,6 +5,15 @@
 ## Updated Log
 </br>
 
+> v1.1.1
+1. 升级@RequestJson，无需 value="XXX"，方法参数名即可
+</br>
+
+> v1.0.3
+1. 解决乱码问题
+2. 修复部分BUG
+</br>
+
 > v1.0.2
 1. 解决 required BUG问题
 </br>
